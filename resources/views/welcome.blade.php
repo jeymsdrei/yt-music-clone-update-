@@ -17,8 +17,8 @@
                 Unlimited Music Streaming
             </div>
             <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight">
-                <span class="text-gradient">Melody</span>
-                <span class="text-white">Stream</span>
+                <span class="text-gradient">Youtube</span>
+                <span class="text-white">Music</span>
             </h1>
             <p class="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
                 Discover, stream, and curate your perfect soundtrack. Millions of songs, zero limits.
@@ -128,7 +128,7 @@
     <section class="py-24 px-6 relative">
         <div class="max-w-3xl mx-auto text-center glass-card rounded-3xl p-12 md:p-16">
             <h2 class="text-3xl md:text-5xl font-bold mb-4">Ready to Listen?</h2>
-            <p class="text-white/40 text-lg mb-8">Join millions of music lovers on MelodyStream today.</p>
+            <p class="text-white/40 text-lg mb-8">Join millions of music lovers on Youtube Music. Start streaming today.</p>
             @auth
                 <a href="{{ route('home') }}" class="btn-primary text-base px-10 py-3 shadow-lg shadow-red-500/25">Start Listening</a>
             @else
@@ -145,7 +145,7 @@
                     <div class="w-7 h-7 rounded-lg bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center">
                         <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55C7.79 13 6 14.79 6 17s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
                     </div>
-                    <span class="font-bold">MelodyStream</span>
+                    <span class="font-bold">Youtube Music</span>
                 </div>
                 <p class="text-white/30 text-xs">Copyright &copy; {{ date('Y') }}. All rights reserved.</p>
             </div>
