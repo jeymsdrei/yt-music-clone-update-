@@ -13,7 +13,7 @@
                     </svg>
                 </div>
                 <h1 class="text-2xl font-bold">Welcome back</h1>
-                <p class="mt-1 text-white/60">Sign in to continue to MusicApp</p>
+                <p class="mt-1 text-white/60">Sign in to continue</p>
             </div>
 
             <form method="POST" action="{{ route('login') }}" class="space-y-5">
@@ -21,12 +21,7 @@
 
                 <div>
                     <label for="email" class="block mb-1.5 text-sm font-medium text-white/80">Email</label>
-                    <div class="relative">
-                        <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                        </svg>
-                        <input type="email" name="email" id="email" value="{{ old('email') }}" class="input-field pl-10 @error('email') border-red-500 @enderror" placeholder="your@email.com" required autofocus autocomplete="username">
-                    </div>
+                    <input type="email" name="email" id="email" value="{{ old('email') }}" class="input-field @error('email') border-red-500 @enderror" placeholder="your@email.com" required autofocus autocomplete="username">
                     @error('email')
                         <p class="mt-1 text-sm text-red-400">{{ $message }}</p>
                     @enderror
@@ -34,12 +29,7 @@
 
                 <div>
                     <label for="password" class="block mb-1.5 text-sm font-medium text-white/80">Password</label>
-                    <div class="relative">
-                        <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                        </svg>
-                        <input type="password" name="password" id="password" class="input-field pl-10 @error('password') border-red-500 @enderror" placeholder="••••••••" required autocomplete="current-password">
-                    </div>
+                    <input type="password" name="password" id="password" class="input-field @error('password') border-red-500 @enderror" placeholder="••••••••" required autocomplete="current-password">
                     @error('password')
                         <p class="mt-1 text-sm text-red-400">{{ $message }}</p>
                     @enderror
@@ -55,7 +45,7 @@
                     @endif
                 </div>
 
-                <button type="submit" class="w-full btn-primary">
+                <button type="submit" class="w-full btn-primary justify-center">
                     Sign In
                 </button>
             </form>
